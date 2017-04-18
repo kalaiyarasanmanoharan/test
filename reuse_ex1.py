@@ -21,4 +21,9 @@ class NewClass(MyClass):
     def product(self):
         return self.x * self.y
 
-print "This module does something"
+def main():
+    print "This is the __name__ value: {}".format(__name__)
+
+if __name__ == "__main__":
+    main()
+    print "This module does something"
